@@ -17,7 +17,7 @@ class RecentlyTagsController extends Controller
      */
     public function index()
     {
-        $tags = RecentlyTags::orderByDesc('used_at')->take(100)->get();
+        $tags = RecentlyTags::orderByDesc('used_at')->take(500)->get();
         return $tags;
     }
 

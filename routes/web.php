@@ -29,3 +29,11 @@ Route::resource('/home', HomeController::class);
 Route::get('/greeting', function () {
     return 'Hello World';
 });
+
+Route::view('/tailwindcss', 'tailwindcss.index');
+Route::view('/tailwindcss-tagged-alert', 'tailwindcss.tagged_alert');
+
+/**
+ * Titles
+ */
+Route::get('titles', 'TitleController@index');
